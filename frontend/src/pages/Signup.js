@@ -162,7 +162,7 @@ const Signup = () => {
           </div>
           <p className="login-bottom-p">
             Already have an account?{" "}
-            <Link to="/login" style={{ color: "#76ABAE" }}>
+            <Link to="/login" style={{ color: "black" }}>
               Login
             </Link>
           </p>

@@ -76,7 +76,7 @@ const assets = [
     image_url: sessionInfo,
     title: "Session Info in Teacher Dashboard",
     caption:
-      "Upon clicking on a past session, the system presents detailed session information including a QR code, a list of attended students along with their photos taken during attendance registration, and their respective distances from the class or session location. If a student's distance exceeds the parameter set by the teacher, it will be displayed in red; otherwise, it will be shown in green.",
+      "Clicking a past session displays details: QR code, student photos, attendance list, and distances (green if within teacher's limit, red if exceeded)."
   },
   {
     image_url: forgorPW,

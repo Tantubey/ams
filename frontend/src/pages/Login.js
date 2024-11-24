@@ -156,7 +156,7 @@ const Login = () => {
                 <a
                   href="/forgot-password"
                   className="forgot-pass-link"
-                  style={{ color: "#76ABAE" }}
+                  style={{ color: "black" }}
                 >
                   Forgot password?
                 </a>
@@ -169,7 +169,7 @@ const Login = () => {
 
           <p className="login-bottom-p">
             Don't have an account?{" "}
-            <Link to="/register" style={{ color: "#76ABAE" }}>
+            <Link to="/register" style={{ color: "black" }}>
               Sign Up
             </Link>
           </p>

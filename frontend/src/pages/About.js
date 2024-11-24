@@ -20,7 +20,7 @@ const assets = [
     image_url: signup,
     title: "Signup",
     caption:
-      "Users have to sign up as either a teacher or a student. After signing up, they will receive an OTP on their registered email for authentication. Following this step, new users can set their passwords.",
+      "Users have to sign up as either a teacher or a student. Following this step, new users can set their passwords.",
   },
   {
     image_url: login,

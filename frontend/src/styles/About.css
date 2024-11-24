@@ -1,5 +1,5 @@
 .slider {
-  max-width: 60vw;
+  max-width: 50vw;
   margin-top: -100px;
 }
 
@@ -19,7 +19,7 @@
   bottom: 6px;
   left: 50%;
   transform: translateX(-50%);
-  color: #fff;
+  color: whitesmoke;
   background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
@@ -33,15 +33,16 @@
 }
 
 .slide span h1 {
-  font-size: 1.5em;
+  font-size: 0.8rem;
   text-align: center;
   padding: 10px;
 }
 
 .slide span p {
-  font-size: 1em;
+  font-size: 0.5em;
   text-align: center;
   padding: 10px;
+  color:#ff4545;
 }
 
 /* animation for span to slide up and slide down*/

@@ -9,10 +9,12 @@
 
 .popup {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  font-size: small;
+  height: 100%;
+  top: 40%;
+  left: 40%;
   width: 1000px;
-  transform: translate(-50%, -50%);
+  transform: translate(-40%, -40%);
   background-color: black;
   padding: 20px;
   border-radius: 5px;
@@ -27,9 +29,11 @@
 
 .popup-inner {
   align-items: center;
+  height: fit-content;
 }
 
 .session-details {
+
   flex: 1; /* Take remaining space */
   margin-right: 20px;
 }
@@ -56,14 +60,13 @@
 }
 
 .scrollable-content {
-  max-height: 300px; /* Adjust this value as needed */
+  max-height: 250px; /* Adjust this value as needed */
   overflow-y: auto;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
   background-color: aliceblue;
   border-radius: 5px;
 }

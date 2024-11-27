@@ -6,6 +6,8 @@ import "../styles/SessionDetails.css";
 
 const SessionDetails = (props) => {
   const [qr, setQR] = useState("");
+  const [copy, setCopy] = useState(false);
+
 
   async function getQR() {
     await axios
@@ -29,6 +31,7 @@ const SessionDetails = (props) => {
   };
   const copyQR = () => {
     navigator.clipboard.writeText(qr);
+    setCopy(true)
   };
 
   function getDistance(distance, radius) {
@@ -76,12 +79,11 @@ const SessionDetails = (props) => {
           <div className="qr-code">
             <QRCode value={qr} onClick={copyQR} size={200} />
             <button onClick={copyQR} className="copybtn">
-              Copy
+              {copy?"copied!!!":"copy"}
             </button>
           </div>
         </div>
         <div className="student-list scrollable-content">
-          <p>Students Attended:</p>
           <table>
             <thead>
               <tr>

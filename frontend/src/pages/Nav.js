@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/Nav.css";
 import { useEffect, useState } from "react";
 import UserDetails from "./UserDetails"; // Assuming both files are in the same directory
-import logo from "../assets/logo192.png";
+import logo from "../assets/logo1.png";
 import logout from "../assets/logout.png";
 
 const Nav = () => {

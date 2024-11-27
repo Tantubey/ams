@@ -9,6 +9,7 @@ const NewSession = ({ togglePopup }) => {
   const [token, setToken] = useState(localStorage.getItem("token") || "");
   const [qrtoggle, setQrtoggle] = useState(false);
   const [qrData, setQrData] = useState("");
+  const [copy, setCopy] = useState(false);
 
   const createQR = async (e) => {
     e.preventDefault();
@@ -80,6 +81,7 @@ const NewSession = ({ togglePopup }) => {
 
   const copyQR = () => {
     navigator.clipboard.writeText(qrData);
+    setCopy(true)
   };
 
   return (
@@ -122,7 +124,7 @@ const NewSession = ({ togglePopup }) => {
       {qrtoggle && (
         <div className="qr-code">
           <QRCode value={qrData} onClick={copyQR} size={200} />
-          <button onClick={copyQR}>Copy</button>
+          <button onClick={copyQR}>{copy ? "copied!!!":"copy"}</button>
         </div>
       )}
     </div>

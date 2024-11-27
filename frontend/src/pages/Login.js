@@ -4,7 +4,7 @@ import { SHA256 } from "crypto-js";
 import axios from "axios";
 import "../styles/Login.css";
 import image512 from "../assets/logo512.png";
-import image192 from "../assets/logo192.png";
+import image192 from "../assets/logo1.png";
 import see from "../assets/see.png";
 import hide from "../assets/hide.png";
 
